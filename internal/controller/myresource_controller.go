@@ -51,14 +51,14 @@ type MyResourceReconciler struct {
 		image: my-app-image:latest
 */
 
-// Q1: Explain what this controller does when this MyResource object is created:
+// Q1: Explain what this controller does when the above MyResource CR is created.
 // Q2: What changes would you make to the Reconcile function to handle updates to the MyResource spec?
 // Q3: If the Deployment creation fails, how does the controller handle the error?
 // Q4: How often will the Reconcile function be requeued?
-// Q5: How could you filter reconciled MyResource resources to only those MyResource objects in a specific namespace?
+// Q5: How could you filter reconciled MyResource resources to only those MyResource CRs in a specific namespace?
 // Q6: Would you consider different update strategy for the Deployment if the MyResource spec changes? Why or why not?
 // Q7: How would you extend this controller to manage additional resources, such as ConfigMaps?
-// Q8: What will happen if you delete a MyResource object? How does kubernetes ensure cleanup of related resources?
+// Q8: What will happen if you delete a MyResource CR? How does kubernetes ensure cleanup of related resources?
 // Q9: How does the finalizer mechanism work in this controller, and what is its purpose?
 // Q10: What are potential benefits of setting MyResource status?
 // Q11: Explain setting availableReplicas in the status field of MyResource.
